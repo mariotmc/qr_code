@@ -1,0 +1,4 @@
+<div id="<%= dom_id qr_code %>" class="flex flex-col items-center">
+  <p>Url: <%= qr_code.url %></p>
+  <%= image_tag qr_code.combined_image if qr_code.combined_image.attached? %>
+</div>
